@@ -1,12 +1,24 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import loadSbtGateway from "../sbt-gateway/loader";
 import "../sbt-gateway/gateway.css";
-import { validateAccess } from "./route-guard";export default function TonEntry() {
+import { validateAccess } from "./route-guard";
+
+export default function TonEntry() {
   const [opened, setOpened] = useState(false);
 
+  useEffect(() => {
+    if (validateAccess()) {
+      setOpened(true);
+    }
+  }, []);
+
   async function openPortal() {
-    await loadSbtGateway(() => setOpened(true));
+    await loadSbtGateway(() => {
+      sessionStorage.setItem("sbtVerified", "true");
+      setOpened(true);
+    });
   }
 
   return (
