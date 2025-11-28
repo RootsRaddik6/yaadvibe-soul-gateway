@@ -1,3 +1,5 @@
-export async function GET() {
-  return Response.json({ status: "ok", message: "verify endpoint active" });
+import { tonVerifyController } from "../../../controllers/ton-verify.controller.js";
+
+export async function POST(req) {
+  return tonVerifyController(req);
 }
