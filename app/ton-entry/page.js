@@ -1,9 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import loadSbtGateway from "../sbt-gateway/loader";
 import "../sbt-gateway/gateway.css";
-
-export default function TonEntry() {
+import { validateAccess } from "./route-guard";export default function TonEntry() {
   const [opened, setOpened] = useState(false);
 
   async function openPortal() {
