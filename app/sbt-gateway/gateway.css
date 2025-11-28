@@ -30,3 +30,9 @@
 }
 
 .hidden { opacity: 0; }
+@supports(padding: max(0px)) {
+  #orb {
+    bottom: calc(40px + env(safe-area-inset-bottom));
+  }
+}
+
