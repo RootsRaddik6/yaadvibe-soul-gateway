@@ -1,3 +1,4 @@
+// TODO: Replace JWT with platform-attested device bound token before mainnet
 /**
  * Minimal device handshake endpoint
  * Accepts a signed nonce from the device + consentHash
