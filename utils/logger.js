@@ -6,3 +6,6 @@ export function log(...args) {
 export function error(...args) {
   console.error(...args);
 }
+export function log(...args) {
+  console.log(new Date().toISOString(), ...args);
+}
