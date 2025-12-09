@@ -1,0 +1,9 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+interface ISoulSBT {
+  function mintPSBT(address to, bytes32 metadataHash) external returns (uint256);
+  function upgradeToTSBT(uint256 psbtId, bytes32 receiptHash) external returns (uint256);
+  function revoke(uint256 tokenId) external;
+  function getMetadata(uint256 tokenId) external view returns (bytes32);
+}
