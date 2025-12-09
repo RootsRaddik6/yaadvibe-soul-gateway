@@ -1,0 +1,3 @@
+/src/covenant/handshake.js        // validates COVENANT_CONTRACT_ADDRESS + version
+/src/covenant/emergencySever.js   // single function: lock everything if EMERGENCY_SEVER_KEY used
+/src/covenant/receiptUploader.js  // Arweave + IPFS permanent store of every mint proof
