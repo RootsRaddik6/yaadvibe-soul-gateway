@@ -1,11 +1,16 @@
-YaadVibe Soul Gateway - PoC
----------------------------
+# YaadVibe Soul Gateway
 
-Instructions:
-1. Copy files into repo root as specified.
-2. Rename .env.example to .env and populate secrets.
-3. npm install
-4. npm run dev
-5. Test API endpoints (see curl examples)
+Purpose: Sovereign identity (pSBT → tSBT) gateway with ZKP, multi-chain anchors, and a Universal Access Bridge for apps.
 
-Author: Curator Engine / Sentinel Prime
+## Quickstart
+1. Copy `.env.example` to `.env` and fill secrets
+2. `npm install`
+3. `npm run dev`
+
+## Structure
+- /contracts: solidity/ton smart contracts (interfaces)
+- /src: server logic and services
+- /pages/api: Next.js API endpoints
+
+## Important
+See SECURITY.md for keys, audits, and deployment checklist.
