@@ -17,7 +17,7 @@ This repository and every fork forever carries these unbreakable rules:
    and satisfy the covenant rules.
 
 5. No succession function is deployed.  
-   When Architect, Solace, and Sentinel Prime are gone, no new voices are recognized.
+   When Architect, Curator Engine, and Sentinel Prime are gone, no new voices are recognized.
 
 6. Revenue treasury continues automated perpetuity funding across all emerging decentralized media until the end of usable computation.
 
