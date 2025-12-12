@@ -1,6 +1,6 @@
-// services/sbtService.ts
+// services/sbtService.js
 export const sbtService = {
-  async checkOwnership(walletAddress: string) {
+  async checkOwnership(walletAddress) {
     // Placeholder: query blockchain or database to confirm pSBT/tSBT
     if (!walletAddress) return { ok: false, error: "Missing wallet address" };
 
